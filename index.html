@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <form id="formulario">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Nombre(s)" required><br>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" placeholder="Apellido(s)" required><br>
+
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" placeholder="Edad (solo números)" required><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div id="resultado" style="display: none;">
+        <p>Tu nombre es <span id="nombreResultado"></span> <span id="apellidoResultado"></span> y tu edad es <span id="edadResultado"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
